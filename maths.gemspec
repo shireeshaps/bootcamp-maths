@@ -6,9 +6,9 @@ require "maths/version"
 
 Gem::Specification.new do |spec|
   spec.name          = 'maths'
-  spec.version       = Maths::VERSION
-  spec.authors       = ["Ranjeet Singh"]
-  spec.email         = ["mail@raeoks.com"]
+  spec.version       =  '1.2'
+  spec.authors       = ["Shireesha"]
+  spec.email         = ["shireesha@Quintype.com"]
   spec.summary       = %q{Quintype's Bootcamp TDD Problem Set}
   spec.description   = %q{"It does simple math operations"}
   spec.homepage      = "https://github.com/raeoks/bootcamp-maths"

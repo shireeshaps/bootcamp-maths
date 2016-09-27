@@ -18,6 +18,19 @@ class Maths::Number
     end
   end
 
+  def sum
+    if (self.number == 0)
+    0
+  elsif (self.number==1)
+    1
+  else
+    number = self.number
+    self.number = self.number - 1
+    number + self.sum
+  end
+end
+
+
   alias_method :n!, :factorial
 
   private
