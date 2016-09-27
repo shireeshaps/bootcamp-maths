@@ -67,8 +67,11 @@ describe "#sum" do
     expect(number.sum).to eq(15)
   end
 
-
-
-
+  describe "#even_integer_by_2" do
+    it "should return 1 when given 2" do
+      number = Maths::Number.new(2)
+        expect(number.even_integer_by_2).to eq(1)
+    end
+  end
 end
 end

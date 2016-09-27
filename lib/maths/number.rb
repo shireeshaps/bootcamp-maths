@@ -30,6 +30,13 @@ class Maths::Number
   end
 end
 
+def even_integer_by_2
+  if(self.number % 2 == 0)
+    number=self.number
+    self.number=self.number/2
+
+  end
+end
 
   alias_method :n!, :factorial
 
