@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'maths'
-  spec.version       = Maths::VERSION
+  spec.version       = '0.1.1'
   spec.authors       = ["Ranjeet Singh"]
   spec.email         = ["mail@raeoks.com"]
   spec.summary       = %q{Quintype's Bootcamp TDD Problem Set}
