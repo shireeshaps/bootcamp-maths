@@ -1,11 +1,11 @@
 class Maths::Number
   def factorial(num)
-    if (num == 0 || num == 1)
+    if (num < 0)
+      Float::INFINITY
+    elsif (num == 0)
       1
-    elsif num == 2
-      2
     else
-      120
+      num * self.factorial(num - 1)
     end
   end
 end

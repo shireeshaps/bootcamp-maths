@@ -25,5 +25,17 @@ describe Maths::Number do
       factorial = number.factorial(5)
       expect(factorial).to eq(120)
     end
+
+    it "should return 24 when given 4" do
+      number = Maths::Number.new
+      factorial = number.factorial(4)
+      expect(factorial).to eq(24)
+    end
+
+    it "should return Infinity when given -1" do
+      number = Maths::Number.new
+      factorial = number.factorial(-1)
+      expect(factorial).to eq(Float::INFINITY)
+    end
   end
 end
