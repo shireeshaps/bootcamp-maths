@@ -72,6 +72,11 @@ describe "#sum" do
       number = Maths::Number.new(2)
         expect(number.even_integer_by_2).to eq(1)
     end
+
+    it "should return Infinity when given odd integers" do
+      number = Maths::Number.new(5)
+        expect(number.even_integer_by_2).to eq(Float::INFINITY)
+    end
   end
 end
 end

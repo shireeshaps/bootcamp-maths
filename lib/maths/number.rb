@@ -34,6 +34,8 @@ def even_integer_by_2
   if(self.number % 2 == 0)
     number=self.number
     self.number=self.number/2
+  else
+    Float::INFINITY
 
   end
 end
