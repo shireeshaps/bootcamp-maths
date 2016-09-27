@@ -32,7 +32,7 @@ end
 
 def even_integer_by_2
   if(self.number % 2 == 0)
-    number=self.number
+    #number=self.number
     self.number=self.number/2
   else
     Float::INFINITY
@@ -42,7 +42,7 @@ end
 
 def odd_integer_equation
   if(self.number % 2  != 0)
-    number=self.number
+    #number=self.number
     self.number =(self.number*3) + 1
   else
     Float::INFINITY
@@ -50,11 +50,7 @@ def odd_integer_equation
 end
 
 def collatz_conjecture
-  if(self.number.even?)
-  even_integer_by_2
-else
-  odd_integer_equation
-  end
+ 1
 end
 
 

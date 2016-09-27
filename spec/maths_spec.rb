@@ -103,12 +103,17 @@ end
 end
 
 describe "#collatz_conjecture" do
-  it " should return 4 when given 1" do
+  it " should return 1 when given 1" do
   number = Maths::Number.new(1)
-    expect(number.collatz_conjecture).to eq(4)
+    expect(number.collatz_conjecture).to eq(1)
   end
 
   it "should return 1 when given 2" do
+  number = Maths::Number.new(2)
+    expect(number.collatz_conjecture).to eq(1)
+  end
+
+  it "should return 1 when given 5" do
   number = Maths::Number.new(2)
     expect(number.collatz_conjecture).to eq(1)
   end
