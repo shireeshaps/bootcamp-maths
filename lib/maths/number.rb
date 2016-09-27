@@ -41,8 +41,11 @@ def even_integer_by_2
 end
 
 def odd_integer_equation
-  if(self.number  == 1)
-    4
+  if(self.number % 2  != 0)
+    number=self.number
+    self.number =(self.number*3) + 1
+  else
+    Float::INFINITY
   end
 end
 

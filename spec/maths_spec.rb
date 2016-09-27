@@ -88,6 +88,18 @@ describe "#sum" do
       number = Maths::Number.new(1)
         expect(number.odd_integer_equation).to eq(4)
   end
+  it "should return Infinity when given 0" do
+    number = Maths::Number.new(0)
+      expect(number.odd_integer_equation).to eq(Float::INFINITY)
+end
+it "should return Infinity when given 2" do
+  number = Maths::Number.new(2)
+    expect(number.odd_integer_equation).to eq(Float::INFINITY)
+end
+it "should return 94 when given 31" do
+  number = Maths::Number.new(31)
+    expect(number.odd_integer_equation).to eq(94)
+end
 end
 end
 end
