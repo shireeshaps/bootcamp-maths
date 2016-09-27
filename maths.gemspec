@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'maths'
-  spec.version       = '1.0'
-  spec.authors       = ["Sai Charan"]
-  spec.email         = ["charankuppa@gmail.com"]
-  spec.summary       = %q{Learn TDD}
-  spec.description   = %q{"Something"}
-  spec.homepage      = "http://domainforproject.com/"
+  spec.version       = Maths::VERSION
+  spec.authors       = ["Ranjeet Singh"]
+  spec.email         = ["mail@raeoks.com"]
+  spec.summary       = %q{Quintype's Bootcamp TDD Problem Set}
+  spec.description   = %q{"It does simple math operations"}
+  spec.homepage      = "https://github.com/raeoks/bootcamp-maths"
   spec.license       = "MIT"
 end
