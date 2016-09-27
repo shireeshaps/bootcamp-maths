@@ -50,7 +50,11 @@ def odd_integer_equation
 end
 
 def collatz_conjecture
-  4
+  if(self.number.even?)
+  even_integer_by_2
+else
+  odd_integer_equation
+  end
 end
 
 
