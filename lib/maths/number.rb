@@ -3,6 +3,10 @@ class Maths::Number
     @number = number
   end
 
+  def number
+    @number
+  end
+
   def factorial
     if (@number < 0)
       Float::INFINITY
@@ -15,4 +19,6 @@ class Maths::Number
       number * self.factorial
     end
   end
+
+  alias_method :n!, :factorial
 end
