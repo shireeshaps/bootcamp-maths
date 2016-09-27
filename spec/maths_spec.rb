@@ -77,6 +77,17 @@ describe "#sum" do
       number = Maths::Number.new(5)
         expect(number.even_integer_by_2).to eq(Float::INFINITY)
     end
+    it "should return 24 when given 48" do
+      number = Maths::Number.new(48)
+        expect(number.even_integer_by_2).to eq(24)
+    end
   end
+
+  describe "#odd_integer_equation" do
+    it "should return 4 when given 1" do
+      number = Maths::Number.new(1)
+        expect(number.odd_integer_equation).to eq(4)
+  end
+end
 end
 end

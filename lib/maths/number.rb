@@ -40,6 +40,12 @@ def even_integer_by_2
   end
 end
 
+def odd_integer_equation
+  if(self.number  == 1)
+    4
+  end
+end
+
   alias_method :n!, :factorial
 
   private
