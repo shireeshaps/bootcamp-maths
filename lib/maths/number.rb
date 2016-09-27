@@ -1,11 +1,18 @@
 class Maths::Number
-  def factorial(num)
-    if (num < 0)
+  def initialize(number)
+    @number = number
+  end
+
+  def factorial
+    if (@number < 0)
       Float::INFINITY
-    elsif (num == 0)
+    elsif (@number == 0)
       1
     else
-      num * self.factorial(num - 1)
+      # HACK: Should be simplified
+      number = @number
+      @number = @number - 1
+      number * self.factorial
     end
   end
 end
