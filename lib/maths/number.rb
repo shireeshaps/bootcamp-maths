@@ -22,7 +22,5 @@ class Maths::Number
 
   private
 
-  def number=(new_number)
-    @number = new_number
-  end
+  attr_writer :number
 end

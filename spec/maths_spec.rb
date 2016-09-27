@@ -6,6 +6,14 @@ describe Maths::Number do
       number = Maths::Number.new(778)
       expect(number.number).to eq(778)
     end
+
+    it "a number should not be writable and raises NoMethodError" do
+      number = Maths::Number.new(778)
+      expect{
+        number.number = 800
+      }.to raise_error(NoMethodError)
+      expect(number.number).to eq(778)
+    end
   end
 
   describe "#factorial" do
