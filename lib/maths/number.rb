@@ -49,6 +49,11 @@ def odd_integer_equation
   end
 end
 
+def collatz_conjecture
+  4
+end
+
+
   alias_method :n!, :factorial
 
   private
